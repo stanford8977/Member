@@ -39,7 +39,7 @@ public class NicknameActivity extends AppCompatActivity implements View.OnClickL
             preferences.edit()
                     .putString("NAME",nickname)
                     .commit();
-            startActivityForResult(intent,0);
+            startActivity(intent);
             setResult(RESULT_OK);
             finish();
 

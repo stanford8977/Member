@@ -26,7 +26,7 @@ public class AgeActivity extends AppCompatActivity implements View.OnClickListen
 
     @Override
     public void onClick(View v) {
-        EditText age=findViewById(R.id.gender);
+        EditText age=findViewById(R.id.Gender);
         String ag=age.getText().toString();
         if(!TextUtils.isEmpty(ag)){
             Intent intent = new Intent(this, GenderActivity.class);
@@ -34,8 +34,7 @@ public class AgeActivity extends AppCompatActivity implements View.OnClickListen
             preferences.edit()
                     .putString("NAME",ag)
                     .commit();
-            startActivityForResult(intent,0);
-            setResult(RESULT_OK);
+            startActivity(intent);
             finish();
 
         }else {
