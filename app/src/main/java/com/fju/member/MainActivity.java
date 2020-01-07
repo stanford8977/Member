@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         nm = findViewById(R.id.nickname1);
-        ag = findViewById(R.id.age1);
+        ag = findViewById(R.id.gender);
         gd = findViewById(R.id.gender1);
         nameString = nm.getText().toString();
         ageString= ag.getText().toString();
